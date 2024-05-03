@@ -1,0 +1,22 @@
+.recipe-card-container {
+  background-color: antiquewhite;
+  color: black;
+  width: 180px;
+  border-radius: 30px;
+  padding: 10px;
+
+  img {
+    width: 100%;
+  }
+  
+  .blurry {
+    filter: blur(4px);
+  }
+
+  button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+}

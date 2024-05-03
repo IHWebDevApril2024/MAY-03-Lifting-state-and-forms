@@ -1,0 +1,57 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 15px;
+  background-color: rgb(88, 63, 111);
+  position: relative;
+  padding: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+
+  input,
+  button {
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
+.blurred-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 60vw;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border-radius: 10px;
+  color: black;
+  animation: spin 500ms linear;
+}
+
+@keyframes spin {
+  from {
+    transform: perspective(700px) rotate3d(0, 1, 0, 190deg) translateX(-50%)
+      translateY(-50%);
+  }
+  to {
+    transform: perspective(700px) rotate3d(0, 1, 0, 0deg) translateX(-50%)
+      translateY(-50%);
+  }
+}

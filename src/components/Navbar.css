@@ -1,0 +1,20 @@
+nav {
+  background-color: rgb(91, 91, 183);
+  height: 50px;
+  ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+
+    a {
+      color: aliceblue;
+    }
+  }
+
+  input {
+    padding: 3px;
+    border-radius: 3px;
+  }
+}
